@@ -1,0 +1,842 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexander Hamilton — An American Musical</title>
+    <meta
+      name="description"
+      content="Official Fan & Guide Portal for Alexander Hamilton: An American Musical by Lin-Manuel Miranda. Explore the storyline, songs with Spotify links, and original cast characters."
+    />
+
+    <!-- Favicon & Icons -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/css/img/hamilton_star_logo.jpg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body id="top">
+    <!-- Background Parallax Effects (Project SEKAI .container--bg) -->
+    <div class="container--bg">
+      <div class="container--bg-spotlight"></div>
+      <div class="container--bg-grid"></div>
+      <canvas id="star-canvas"></canvas>
+    </div>
+
+    <!-- Header with Left Upper Menu Button -->
+    <header class="header">
+      <div class="header--inner">
+        <div class="header--left">
+          <!-- Menu Button on the Left Upper Part -->
+          <button
+            id="menu-btn"
+            class="header--btn"
+            aria-label="Open Navigation Menu"
+          >
+            <div class="header--btn-icon">
+              <span class="header--btn-line"></span>
+              <span class="header--btn-line"></span>
+              <span class="header--btn-line"></span>
+            </div>
+            <span class="header--btn-text"> MENU </span>
+          </button>
+
+          <a href="index.html" class="header--logo">
+            <img
+              src="assets/css/img/hamilton_star_logo.jpg"
+              alt="Hamilton Star"
+              class="header--logo-star"
+            />
+            <span class="header--logo-title">Alexander Hamilton</span>
+          </a>
+        </div>
+
+        <nav class="header--nav-links">
+          <a href="index.html" class="header--link active"
+            ><i class="fa-solid fa-house"></i> Home</a
+          >
+          <a href="#storyline" class="header--link"
+            ><i class="fa-solid fa-book-open"></i> Storyline</a
+          >
+          <a href="songs.html" class="header--link"
+            ><i class="fa-brands fa-spotify"></i> Songs</a
+          >
+          <a href="characters.html" class="header--link"
+            ><i class="fa-solid fa-user-group"></i> Characters</a
+          >
+          <a
+            href="https://hamiltonmusical.com/new-york/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="header--official-cta"
+          >
+            <i class="fa-solid fa-ticket"></i> Official Site
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Project SEKAI Full-Screen Navigation Drawer -->
+    <div id="nav-drawer" class="header--nav">
+      <div class="header--nav-bg">HAMILTON</div>
+      <div class="header--nav-contents">
+        <ul class="header--nav-list">
+          <li class="header--nav-item">
+            <a href="index.html">
+              <span>HOME</span>
+            </a>
+          </li>
+          <li class="header--nav-item">
+            <a href="index.html#storyline">
+              <span>STORYLINE</span>
+            </a>
+          </li>
+          <li class="header--nav-item">
+            <a href="songs.html">
+              <span>SONGS</span>
+            </a>
+          </li>
+          <li class="header--nav-item">
+            <a href="characters.html">
+              <span>CHARACTERS</span>
+            </a>
+          </li>
+          <li class="header--nav-item">
+            <a
+              href="https://hamiltonmusical.com/new-york/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="color: var(--gold-light)"
+            >
+              <span>OFFICIAL SITE</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="header--nav-sidebar">
+          <div>
+            <span class="header--nav-badge">BROADWAY PHENOMENON</span>
+            <p class="header--nav-desc" style="margin-top: 14px">
+              Book, Music, and Lyrics by
+              <strong>Lin-Manuel Miranda</strong>.<br />
+              Inspired by Ron Chernow’s 2004 biography of founding father
+              Alexander Hamilton.
+            </p>
+          </div>
+          <div>
+            <p class="header--nav-sns-title">SHARE THIS MUSICAL</p>
+            <div class="header--nav-sns-list" style="margin-top: 12px">
+              <a href="#" class="sns-btn share-tw" title="Share on X / Twitter"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="#" class="sns-btn share-fb" title="Share on Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://open.spotify.com/playlist/33J2gwc8ANWI77i3rrGJxZ?si=3c4bea108581488f&pt=66f4933dae51e7af12791ef85f337ee4"
+                target="_blank"
+                class="sns-btn"
+                title="Hamilton on Spotify"
+                ><i class="fa-brands fa-spotify"></i
+              ></a>
+              <a href="#" class="sns-btn share-copy" title="Copy Link"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Social Share Bar on Right Edge (Project SEKAI .fix-sns) -->
+    <aside class="fix-sns">
+      <p class="fix-sns--tit">SHARE</p>
+      <div class="fix-sns--list">
+        <a href="#" class="fix-sns--btn share-tw" title="Share on Twitter"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+        <a href="#" class="fix-sns--btn share-fb" title="Share on Facebook"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          href="https://open.spotify.com/album/1kCHru7uxPuQwyP48wL4O2"
+          target="_blank"
+          class="fix-sns--btn"
+          title="Listen on Spotify"
+          ><i class="fa-brands fa-spotify"></i
+        ></a>
+        <a href="#" class="fix-sns--btn share-copy" title="Copy Link"
+          ><i class="fa-solid fa-link"></i
+        ></a>
+      </div>
+    </aside>
+
+    <!-- Hero Main Visual (Project SEKAI .top-mv) -->
+    <main class="top-mv">
+      <div class="top-mv--badge">
+        <span class="top-mv--badge-dot"></span>
+        <span class="top-mv--badge-text"
+          >11 Tony Awards • Pulitzer Prize • Grammy Winner</span
+        >
+      </div>
+
+      <div class="top-mv--logo-wrap">
+        <img
+          src="assets/css/img/hamilton_star_logo.jpg"
+          alt="Hamilton Musical Star"
+        />
+      </div>
+
+      <!-- Title with font matching https://hamiltonmusical.com/new-york/ exactly -->
+      <h1 class="site-title">Alexander Hamilton</h1>
+      <h2 class="site-subtitle">An American Musical</h2>
+
+      <p class="top-mv--catch">
+        <span>"America then, told by America now."</span> Lin-Manuel Miranda’s
+        revolutionary masterpiece fusing hip-hop, jazz, R&B, and Broadway to
+        tell the unforgettable story of Alexander Hamilton.
+      </p>
+
+      <div class="top-mv--actions">
+        <a href="#storyline" class="btn-primary"
+          ><i class="fa-solid fa-book-bookmark"></i> Explore Storyline</a
+        >
+        <a href="songs.html" class="btn-secondary"
+          ><i class="fa-brands fa-spotify"></i> Listen to Songs</a
+        >
+        <a href="characters.html" class="btn-secondary"
+          ><i class="fa-solid fa-users"></i> Meet Characters</a
+        >
+      </div>
+
+      <!-- Accolades & Feature Carousel (Project SEKAI .top-mv--slide) -->
+      <div class="top-mv--slide">
+        <div class="slider-container">
+          <div class="slider-track" id="slider-track">
+            <!-- Slide 1 -->
+            <div class="slide-item">
+              <div>
+                <span class="slide-tag">THE REVOLUTIONARY SCORE</span>
+                <h3 class="slide-title">Fusing Hip-Hop, Jazz & Broadway</h3>
+                <p class="slide-desc">
+                  Composer and playwright Lin-Manuel Miranda wrote 46
+                  electrifying tracks featuring rapid-fire syllable flows,
+                  emotional ballads, and theatrical drama that transformed
+                  American musical history.
+                </p>
+                <div class="slide-stats">
+                  <div class="stat-box">
+                    <div class="stat-num">16</div>
+                    <div class="stat-label">Tony Nominations</div>
+                  </div>
+                  <div class="stat-box">
+                    <div class="stat-num">11</div>
+                    <div class="stat-label">Tony Wins</div>
+                  </div>
+                  <div class="stat-box">
+                    <div class="stat-num">1</div>
+                    <div class="stat-label">Pulitzer Prize</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-visual">
+                <img
+                  src="assets/css/img/alexander_hamilton.png"
+                  alt="Alexander Hamilton"
+                />
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide-item">
+              <div>
+                <span class="slide-tag">THE SCHUYLER SISTERS</span>
+                <h3 class="slide-title">"History is Happening in Manhattan"</h3>
+                <p class="slide-desc">
+                  Angelica, Eliza, and Peggy bring intellect, romance, and
+                  fierce passion to revolutionary New York. Eliza’s enduring
+                  grace carries Alexander’s legacy beyond his lifetime into
+                  history.
+                </p>
+                <div class="slide-stats">
+                  <div class="stat-box">
+                    <div class="stat-num">#1</div>
+                    <div class="stat-label">Billboard Cast Album</div>
+                  </div>
+                  <div class="stat-box">
+                    <div class="stat-num">Diamond</div>
+                    <div class="stat-label">RIAA Certified</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-visual">
+                <img
+                  src="assets/css/img/eliza_schuyler.png"
+                  alt="Eliza Schuyler"
+                />
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide-item">
+              <div>
+                <span class="slide-tag">POLITICAL RIVALRIES & TRIUMPHS</span>
+                <h3 class="slide-title">"The Room Where It Happens"</h3>
+                <p class="slide-desc">
+                  From high-stakes cabinet rap battles with Thomas Jefferson to
+                  the tragic rivalry with Aaron Burr, the musical portrays the
+                  complex founding fathers as vibrant, flawed, and undeniably
+                  human.
+                </p>
+                <div class="slide-stats">
+                  <div class="stat-box">
+                    <div class="stat-num">2015</div>
+                    <div class="stat-label">Broadway Premiere</div>
+                  </div>
+                  <div class="stat-box">
+                    <div class="stat-num">Grammy</div>
+                    <div class="stat-label">Best Musical Theater</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-visual">
+                <img src="assets/css/img/aaron_burr.png" alt="Aaron Burr" />
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-controls">
+            <button
+              class="slider-btn"
+              id="slider-prev"
+              aria-label="Previous Slide"
+            >
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="slider-btn" id="slider-next" aria-label="Next Slide">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="slider-dots" id="slider-dots"></div>
+      </div>
+    </main>
+
+    <!-- Comprehensive Storyline Section -->
+    <section id="storyline" class="top-section">
+      <div class="top-section--header">
+        <h2 class="top-section--title-en">STORYLINE</h2>
+        <p class="top-section--title-sub">
+          The Full Musical Narrative Created by Lin-Manuel Miranda
+        </p>
+      </div>
+
+      <!-- Act Filter Tabs -->
+      <div class="story-tabs">
+        <button class="story-tab-btn active" data-act="all">
+          All Narrative
+        </button>
+        <button class="story-tab-btn" data-act="act1">
+          Act I: The Revolution (1776 – 1781)
+        </button>
+        <button class="story-tab-btn" data-act="act2">
+          Act II: The Republic & Legacy (1789 – 1804)
+        </button>
+      </div>
+
+      <div class="story-timeline">
+        <!-- Scene 1 -->
+        <article class="story-item" data-act="act1">
+          <div class="story-meta">
+            <span class="story-year">1776</span>
+            <span class="story-scene">Act I • Scene 1 & 2</span>
+            <div class="story-song-ref">
+              <i class="fa-solid fa-music"></i> "Alexander Hamilton"
+            </div>
+          </div>
+          <div class="story-body">
+            <h3>The Ten-Dollar Founding Father Without A Father</h3>
+            <p>
+              Born out of wedlock in the Caribbean island of Nevis, orphaned as
+              a boy, and surviving a devastating hurricane through his sheer
+              gift of writing, nineteen-year-old Alexander Hamilton arrives in
+              New York City with fiery intellect and unmatched ambition. In
+              lower Manhattan, he meets the cautious, well-connected Aaron Burr,
+              who advises him to <em>"talk less, smile more."</em> Hamilton
+              dismisses this cautious restraint, seeking immediate revolution.
+            </p>
+            <div class="story-quote">
+              "There's a million things I haven't done, but just you wait, just
+              you wait!"
+            </div>
+          </div>
+        </article>
+
+        <!-- Scene 2 -->
+        <article class="story-item" data-act="act1">
+          <div class="story-meta">
+            <span class="story-year">1776</span>
+            <span class="story-scene">Act I • Scene 3 & 4</span>
+            <div class="story-song-ref">
+              <i class="fa-solid fa-music"></i> "My Shot"
+            </div>
+          </div>
+          <div class="story-body">
+            <h3>The Sons of Liberty & "My Shot"</h3>
+            <p>
+              In a vibrant tavern, Hamilton forms an unbreakable brotherhood
+              with three passionate abolitionists and revolutionaries: John
+              Laurens, the fiery Marquis de Lafayette, and tailor-spy Hercules
+              Mulligan. Together, they pledge to lay down their lives for
+              American independence. Across the Atlantic, King George III scoffs
+              at the colonists' rebellion in a darkly comedic pop ballad,
+              predicting that America will crawl back to his rule.
+            </p>
+            <div class="story-quote">
+              "I am not throwing away my shot! Hey yo, I'm just like my country:
+              I'm young, scrappy, and hungry!"
+            </div>
+          </div>
+        </article>
+
+        <!-- Scene 3 -->
+        <article class="story-item" data-act="act1">
+          <div class="story-meta">
+            <span class="story-year">1780</span>
+            <span class="story-scene">Act I • Scene 5 & 10</span>
+            <div class="story-song-ref">
+              <i class="fa-solid fa-music"></i> "The Schuyler Sisters" &
+              "Helpless"
+            </div>
+          </div>
+          <div class="story-body">
+            <h3>The Winter's Ball & The Schuyler Sisters</h3>
+            <p>
+              The wealthy and progressive daughters of General Philip
+              Schuyler—Angelica, Eliza, and Peggy—visit Manhattan eager to be
+              part of the revolutionary movement. At a winter military ball,
+              Eliza Schuyler falls instantly and deeply in love with Alexander
+              ("Helpless"). Angelica, despite having an intense intellectual
+              spark with Hamilton herself, introduces Alexander to Eliza,
+              sacrificing her own heart to secure her sister’s eternal happiness
+              ("Satisfied"). Alexander and Eliza marry shortly after.
+            </p>
+            <div class="story-quote">
+              "To the groom, to the bride, from your sister who is always by
+              your side... At least I keep his eyes in my life."
+            </div>
+          </div>
+        </article>
+
+        <!-- Scene 4 -->
+        <article class="story-item" data-act="act1">
+          <div class="story-meta">
+            <span class="story-year">1781</span>
+            <span class="story-scene">Act I • Scene 18 & 20</span>
+            <div class="story-song-ref">
+              <i class="fa-solid fa-music"></i> "Yorktown (The World Turned
+              Upside Down)"
+            </div>
+          </div>
+          <div class="story-body">
+            <h3>Washington's Command & Victory at Yorktown</h3>
+            <p>
+              General George Washington enlists Hamilton as his primary
+              aide-de-camp and indispensable speechwriter ("Right Hand Man").
+              Though Hamilton repeatedly begs for battlefield command to prove
+              his honor, Washington protects him until the climactic siege of
+              Yorktown in 1781. Reunited with Lafayette, Laurens, and Mulligan,
+              Hamilton commands a key redoubt assault, forcing General
+              Cornwallis to surrender. The world is turned upside down as
+              America claims independence.
+            </p>
+            <div class="story-quote">
+              "The world turned upside down! Freedom at small cost... We won, we
+              won, we won!"
+            </div>
+          </div>
+        </article>
+
+        <!-- Scene 5 -->
+        <article class="story-item" data-act="act1">
+          <div class="story-meta">
+            <span class="story-year">1787</span>
+            <span class="story-scene">Act I • Finale</span>
+            <div class="story-song-ref">
+              <i class="fa-solid fa-music"></i> "Non-Stop"
+            </div>
+          </div>
+          <div class="story-body">
+            <h3>The Constitutional Convention & "Non-Stop"</h3>
+            <p>
+              Following the war, Alexander Hamilton and Aaron Burr return to New
+              York as prominent defense attorneys. Hamilton is devastated by the
+              news that John Laurens died in a pointless post-war skirmish.
+              Refusing to rest, Hamilton champions the new U.S. Constitution and
+              writes an astounding 51 of the 85 essays comprising the Federalist
+              Papers. Newly inaugurated President George Washington appoints
+              Hamilton as America’s first Secretary of the Treasury, setting up
+              the political battles to come.
+            </p>
+            <div class="story-quote">
+              "Why do you write like you're running out of time? Write day and
+              night like you're running out of time?"
+            </div>
+          </div>
+        </article>
+
+        <!-- Scene 6 -->
+        <article class="story-item" data-act="act2">
+          <div class="story-meta">
+            <span class="story-year">1789</span>
+            <span class="story-scene">Act II • Scene 1 & 2</span>
+            <div class="story-song-ref">
+              <i class="fa-solid fa-music"></i> "What'd I Miss?" & "Cabinet
+              Battle #1"
+            </div>
+          </div>
+          <div class="story-body">
+            <h3>Jefferson Returns & The Cabinet Battles</h3>
+            <p>
+              Thomas Jefferson returns from his ambassadorship in Paris, oozing
+              charm and Southern agrarian idealism ("What'd I Miss?"). When
+              Hamilton proposes a bold federal bank plan to assume state debts
+              and establish national credit, Jefferson and James Madison
+              vehemently oppose it. President Washington moderates a fiery
+              hip-hop cabinet debate, warning Hamilton that without Southern
+              congressional votes, his financial visionary program will perish.
+            </p>
+            <div class="story-quote">
+              "Such a blunder, sometimes it makes me wonder why I even bring the
+              thunder!"
+            </div>
+          </div>
+        </article>
+
+        <!-- Scene 7 -->
+        <article class="story-item" data-act="act2">
+          <div class="story-meta">
+            <span class="story-year">1790</span>
+            <span class="story-scene">Act II • Scene 5</span>
+            <div class="story-song-ref">
+              <i class="fa-solid fa-music"></i> "The Room Where It Happens"
+            </div>
+          </div>
+          <div class="story-body">
+            <h3>The Compromise of 1790: The Room Where It Happens</h3>
+            <p>
+              Behind closed doors over a private dinner, Hamilton strikes a
+              historic bargain with Jefferson and Madison: the capital of the
+              United States will be relocated to the South (the Potomac River,
+              Washington D.C.) in exchange for Southern approval of Hamilton’s
+              national banking system. Observing from the outside, Aaron Burr
+              realizes that pure political neutrality has left him powerless,
+              and he vows to seize power by any means necessary.
+            </p>
+            <div class="story-quote">
+              "No one else was in the room where it happened. The room where it
+              happened, the room where it happened!"
+            </div>
+          </div>
+        </article>
+
+        <!-- Scene 8 -->
+        <article class="story-item" data-act="act2">
+          <div class="story-meta">
+            <span class="story-year">1797</span>
+            <span class="story-scene">Act II • Scene 13 & 15</span>
+            <div class="story-song-ref">
+              <i class="fa-solid fa-music"></i> "The Reynolds Pamphlet" & "Burn"
+            </div>
+          </div>
+          <div class="story-body">
+            <h3>The Reynolds Affair & Eliza's Heartbreak ("Burn")</h3>
+            <p>
+              Confronted by Jefferson, Madison, and Burr over suspicious
+              financial disbursements, Hamilton fears he is being accused of
+              government treason. To defend his public honor, he publishes the
+              sensational 95-page Reynolds Pamphlet, publicly confessing to an
+              adulterous blackmail affair with Maria Reynolds. The scandal ruins
+              his political future. Devastated by the public humiliation, Eliza
+              burns all their love letters, erasing herself from his narrative
+              so historians can never judge her grief.
+            </p>
+            <div class="story-quote">
+              "I hope that you burn... You have no right to my heart. You do not
+              get to say."
+            </div>
+          </div>
+        </article>
+
+        <!-- Scene 9 -->
+        <article class="story-item" data-act="act2">
+          <div class="story-meta">
+            <span class="story-year">1801</span>
+            <span class="story-scene">Act II • Scene 17 & 18</span>
+            <div class="story-song-ref">
+              <i class="fa-solid fa-music"></i> "It's Quiet Uptown"
+            </div>
+          </div>
+          <div class="story-body">
+            <h3>Philip's Tragic Duel & Forgiveness in Harlem</h3>
+            <p>
+              Hamilton’s eldest son Philip challenges George Eacker to a duel to
+              defend his father’s honor and is fatally shot. Alexander and Eliza
+              are engulfed in unbearable agony. Retreating to their countryside
+              home in Harlem, Alexander walks quietly by Eliza’s side, begging
+              for nothing and offering true repentance. In one of musical
+              theatre’s most moving moments, Eliza takes his hand, choosing
+              forgiveness through love.
+            </p>
+            <div class="story-quote">
+              "There are moments that the words don't reach. There is suffering
+              too terrible to name... Forgiveness. Can you imagine?"
+            </div>
+          </div>
+        </article>
+
+        <!-- Scene 10 -->
+        <article class="story-item" data-act="act2">
+          <div class="story-meta">
+            <span class="story-year">1804</span>
+            <span class="story-scene">Act II • Scene 22 & 23</span>
+            <div class="story-song-ref">
+              <i class="fa-solid fa-music"></i> "The World Was Wide Enough" &
+              "Who Lives, Who Dies"
+            </div>
+          </div>
+          <div class="story-body">
+            <h3>The Duel at Weehawken & Eliza's Legacy</h3>
+            <p>
+              In the deadlocked Presidential Election of 1800, Hamilton endorses
+              his fierce ideological rival Thomas Jefferson over Aaron Burr,
+              stating that <em>"Jefferson has beliefs; Burr has none."</em> Burr
+              demands satisfaction in a duel across the Hudson River in
+              Weehawken, New Jersey. Hamilton intentionally fires his pistol
+              toward the sky, but Burr shoots him through the ribs. Hamilton
+              dies hours later, leaving Burr to lament:
+              <em>"The world was wide enough for both Hamilton and me."</em> In
+              the emotional finale, Eliza lives for another fifty years,
+              preserving Hamilton’s writings and founding New York City’s first
+              private orphanage.
+            </p>
+            <div class="story-quote">
+              "Who lives, who dies, who tells your story? I speak out against
+              slavery; you could have done so much more if you only had time."
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Quick Hub Navigation Sections -->
+    <section class="top-section" style="padding-top: 20px">
+      <div
+        style="
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+          gap: 30px;
+        "
+      >
+        <!-- Songs Preview Card -->
+        <div
+          style="
+            background: var(--bg-card);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 14px;
+            padding: 36px;
+            text-align: center;
+          "
+        >
+          <i
+            class="fa-brands fa-spotify"
+            style="
+              font-size: 3rem;
+              color: var(--spotify-green);
+              margin-bottom: 16px;
+            "
+          ></i>
+          <h3
+            style="
+              font-family: var(--font-title);
+              font-size: 1.6rem;
+              color: #fff;
+              margin-bottom: 12px;
+            "
+          >
+            The Complete Songbook
+          </h3>
+          <p
+            style="
+              color: var(--text-muted);
+              font-size: 0.95rem;
+              line-height: 1.6;
+              margin-bottom: 24px;
+            "
+          >
+            Browse all iconic musical tracks with custom album artwork and
+            direct Spotify streaming links.
+          </p>
+          <a href="songs.html" class="btn-primary"
+            ><i class="fa-solid fa-headphones"></i> Explore All Songs</a
+          >
+        </div>
+
+        <!-- Characters Preview Card -->
+        <div
+          style="
+            background: var(--bg-card);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 14px;
+            padding: 36px;
+            text-align: center;
+          "
+        >
+          <i
+            class="fa-solid fa-masks-theater"
+            style="
+              font-size: 3rem;
+              color: var(--gold-light);
+              margin-bottom: 16px;
+            "
+          ></i>
+          <h3
+            style="
+              font-family: var(--font-title);
+              font-size: 1.6rem;
+              color: #fff;
+              margin-bottom: 12px;
+            "
+          >
+            Original Broadway Cast
+          </h3>
+          <p
+            style="
+              color: var(--text-muted);
+              font-size: 0.95rem;
+              line-height: 1.6;
+              margin-bottom: 24px;
+            "
+          >
+            Meet the characters with isolated transparent cutouts, original
+            Broadway performers, and roles.
+          </p>
+          <a href="characters.html" class="btn-primary"
+            ><i class="fa-solid fa-users"></i> Meet The Cast</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Lower Part of Each Page: Official Website Link (Mandatory Requirement) -->
+    <footer class="footer">
+      <div class="footer--inner">
+        <div class="footer--official-box">
+          <div class="footer--official-info">
+            <img
+              src="assets/css/img/hamilton_star_logo.jpg"
+              alt="Hamilton Star Logo"
+              class="footer--official-logo"
+            />
+            <div>
+              <span class="footer--official-tag"
+                >OFFICIAL BROADWAY PRODUCTION</span
+              >
+              <h3 class="footer--official-headline">
+                Experience Hamilton Live on Broadway
+              </h3>
+              <p class="footer--official-sub">
+                Richard Rodgers Theatre • 226 W 46th St, New York, NY 10036
+              </p>
+            </div>
+          </div>
+          <!-- Official Website External Link -->
+          <a
+            href="https://hamiltonmusical.com/new-york/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer--official-link-btn"
+          >
+            Visit Official Website
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="footer--grid">
+          <div>
+            <h4 class="footer--col-title">About Hamilton</h4>
+            <p
+              style="
+                font-size: 0.9rem;
+                color: var(--text-muted);
+                line-height: 1.7;
+              "
+            >
+              Alexander Hamilton is an award-winning musical with book, music,
+              and lyrics by Lin-Manuel Miranda. It won eleven Tony Awards, the
+              2016 Pulitzer Prize for Drama, and the Grammy Award for Best
+              Musical Theater Album.
+            </p>
+          </div>
+          <div>
+            <h4 class="footer--col-title">Site Navigation</h4>
+            <div class="footer--col-links">
+              <a href="index.html">Home & Storyline</a>
+              <a href="songs.html">Songs with Spotify Links</a>
+              <a href="characters.html">Cast & Characters Without Background</a>
+              <a href="https://hamiltonmusical.com/new-york/" target="_blank"
+                >Official New York Production</a
+              >
+            </div>
+          </div>
+          <div>
+            <h4 class="footer--col-title">Official Music & Media</h4>
+            <div class="footer--col-links">
+              <a
+                href="https://open.spotify.com/album/1kCHru7uxPuQwyP48wL4O2"
+                target="_blank"
+                ><i class="fa-brands fa-spotify"></i> Spotify Cast Album</a
+              >
+              <a href="https://www.youtube.com/@HamiltonMusical" target="_blank"
+                ><i class="fa-brands fa-youtube"></i> Official YouTube</a
+              >
+              <a href="https://twitter.com/HamiltonMusical" target="_blank"
+                ><i class="fa-brands fa-x-twitter"></i> Official Twitter / X</a
+              >
+              <a
+                href="https://www.instagram.com/hamiltonmusical/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i> Official Instagram</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="footer--bottom">
+          <p>
+            &copy; 2026 Alexander Hamilton Fan Portal. Inspired by
+            <a href="https://pjsekai.sega.jp/" target="_blank">Project SEKAI</a>
+            &
+            <a href="https://hamiltonmusical.com/new-york/" target="_blank"
+              >Hamilton Musical</a
+            >.
+          </p>
+          <p>
+            Original Musical by Lin-Manuel Miranda • Official Site:
+            <a href="https://hamiltonmusical.com/new-york/" target="_blank"
+              >hamiltonmusical.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

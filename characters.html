@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Characters & Cast — Alexander Hamilton</title>
+    <meta
+      name="description"
+      content="Meet the characters and original Broadway cast of Alexander Hamilton: An American Musical by Lin-Manuel Miranda. Transparent character portraits and detailed biographies."
+    />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/css/img/hamilton_star_logo.jpg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body id="top">
+    <!-- Background Parallax Effects -->
+    <div class="container--bg">
+      <div class="container--bg-spotlight"></div>
+      <div class="container--bg-grid"></div>
+      <canvas id="star-canvas"></canvas>
+    </div>
+
+    <!-- Header with Left Upper Menu Button -->
+    <header class="header">
+      <div class="header--inner">
+        <div class="header--left">
+          <!-- Menu Button on the Left Upper Part -->
+          <button
+            id="menu-btn"
+            class="header--btn"
+            aria-label="Open Navigation Menu"
+          >
+            <div class="header--btn-icon">
+              <span class="header--btn-line"></span>
+              <span class="header--btn-line"></span>
+              <span class="header--btn-line"></span>
+            </div>
+            <span class="header--btn-text">
+              MENU
+              <small>メニュー</small>
+            </span>
+          </button>
+
+          <a href="index.html" class="header--logo">
+            <img
+              src="assets/css/img/hamilton_star_logo.jpg"
+              alt="Hamilton Star"
+              class="header--logo-star"
+            />
+            <span class="header--logo-title">Alexander Hamilton</span>
+          </a>
+        </div>
+
+        <nav class="header--nav-links">
+          <a href="index.html" class="header--link"
+            ><i class="fa-solid fa-house"></i> Home</a
+          >
+          <a href="index.html#storyline" class="header--link"
+            ><i class="fa-solid fa-book-open"></i> Storyline</a
+          >
+          <a href="songs.html" class="header--link"
+            ><i class="fa-brands fa-spotify"></i> Songs</a
+          >
+          <a href="characters.html" class="header--link active"
+            ><i class="fa-solid fa-user-group"></i> Characters</a
+          >
+          <a
+            href="https://hamiltonmusical.com/new-york/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="header--official-cta"
+          >
+            <i class="fa-solid fa-ticket"></i> Official Site
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Project SEKAI Full-Screen Navigation Drawer -->
+    <div id="nav-drawer" class="header--nav">
+      <div class="header--nav-bg">CAST</div>
+      <div class="header--nav-contents">
+        <ul class="header--nav-list">
+          <li class="header--nav-item">
+            <a href="index.html">
+              <span>HOME</span>
+            </a>
+          </li>
+          <li class="header--nav-item">
+            <a href="index.html#storyline">
+              <span>STORYLINE</span>
+            </a>
+          </li>
+          <li class="header--nav-item">
+            <a href="songs.html">
+              <span>SONGS</span>
+            </a>
+          </li>
+          <li class="header--nav-item">
+            <a href="characters.html">
+              <span>CHARACTERS</span>
+            </a>
+          </li>
+          <li class="header--nav-item">
+            <a
+              href="https://hamiltonmusical.com/new-york/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="color: var(--gold-light)"
+            >
+              <span>OFFICIAL SITE</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="header--nav-sidebar">
+          <div>
+            <span class="header--nav-badge">ORIGINAL BROADWAY CAST</span>
+            <p class="header--nav-desc" style="margin-top: 14px">
+              The historic 2015 Broadway cast redefined American theater by
+              casting Black, Latino, and Asian actors as the Founding Fathers
+              and revolutionary leaders.
+            </p>
+          </div>
+          <div>
+            <p class="header--nav-sns-title">SHARE THIS PAGE</p>
+            <div class="header--nav-sns-list" style="margin-top: 12px">
+              <a href="#" class="sns-btn share-tw" title="Share on X / Twitter"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="#" class="sns-btn share-fb" title="Share on Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://open.spotify.com/album/1kCHru7uxPuQwyP48wL4O2"
+                target="_blank"
+                class="sns-btn"
+                title="Hamilton on Spotify"
+                ><i class="fa-brands fa-spotify"></i
+              ></a>
+              <a href="#" class="sns-btn share-copy" title="Copy Link"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Social Share Bar on Right Edge -->
+    <aside class="fix-sns">
+      <p class="fix-sns--tit">SHARE</p>
+      <div class="fix-sns--list">
+        <a href="#" class="fix-sns--btn share-tw" title="Share on Twitter"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+        <a href="#" class="fix-sns--btn share-fb" title="Share on Facebook"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          href="https://open.spotify.com/album/1kCHru7uxPuQwyP48wL4O2"
+          target="_blank"
+          class="fix-sns--btn"
+          title="Listen on Spotify"
+          ><i class="fa-brands fa-spotify"></i
+        ></a>
+        <a href="#" class="fix-sns--btn share-copy" title="Copy Link"
+          ><i class="fa-solid fa-link"></i
+        ></a>
+      </div>
+    </aside>
+
+    <!-- Page Header -->
+    <section
+      class="top-section"
+      style="padding-top: 130px; padding-bottom: 30px"
+    >
+      <div class="top-section--header">
+        <div class="top-mv--badge">
+          <span class="top-mv--badge-dot"></span>
+          <span class="top-mv--badge-text">Dramatis Personae</span>
+        </div>
+        <h1 class="site-title" style="font-size: clamp(2.4rem, 5vw, 4.2rem)">
+          Characters & Cast
+        </h1>
+        <p class="top-section--title-sub">
+          Isolated Character Portraits Without Background
+        </p>
+        <p
+          style="
+            max-width: 750px;
+            margin: 18px auto 0;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+          "
+        >
+          Discover the founding figures of the American experiment. Every
+          character below is presented in full theatrical costume with
+          background removed to highlight their stage presence.
+        </p>
+      </div>
+
+      <!-- Characters Grid (Images without background) -->
+      <div class="characters-grid">
+        <!-- 1. Alexander Hamilton -->
+        <article class="character-card">
+          <div class="character-card--stage">
+            <div class="stage-spotlight-beam"></div>
+            <div class="stage-ring"></div>
+            <!-- Picture of character without background -->
+            <img
+              src="assets/css/img/alexander_hamilton.png"
+              alt="Alexander Hamilton without background"
+              class="character-card--img"
+            />
+          </div>
+          <div class="character-card--body">
+            <span class="character-card--actor"
+              >ORIGINATED BY LIN-MANUEL MIRANDA</span
+            >
+            <h2 class="character-card--name">Alexander Hamilton</h2>
+            <span class="character-card--role-tag"
+              >First Secretary of the Treasury • Founding Father</span
+            >
+            <p class="character-card--desc">
+              An ambitious, orphaned immigrant from the Caribbean who uses his
+              relentless writing ability and intellect to rise to the center of
+              American power. He serves as Washington’s aide-de-camp, writes the
+              Federalist Papers, and builds the nation's financial system.
+            </p>
+            <div class="character-card--song-badge">
+              <i class="fa-solid fa-music"></i> Signature:
+              <span>"My Shot" • "Non-Stop"</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Aaron Burr -->
+        <article class="character-card">
+          <div class="character-card--stage">
+            <div class="stage-spotlight-beam"></div>
+            <div class="stage-ring"></div>
+            <!-- Picture of character without background -->
+            <img
+              src="assets/css/img/aaron_burr.png"
+              alt="Aaron Burr without background"
+              class="character-card--img"
+            />
+          </div>
+          <div class="character-card--body">
+            <span class="character-card--actor"
+              >ORIGINATED BY LESLIE ODOM JR.</span
+            >
+            <h2 class="character-card--name">Aaron Burr</h2>
+            <span class="character-card--role-tag"
+              >Third Vice President • Narrator & Rival</span
+            >
+            <p class="character-card--desc">
+              Hamilton's lifelong foil, friend, and eventual killer. Cautious,
+              poised, and patient, Burr embodies the philosophy of
+              <em>"Talk less, smile more"</em> and <em>"Wait for it"</em> until
+              ambition compels him into the duel that ruins both men.
+            </p>
+            <div class="character-card--song-badge">
+              <i class="fa-solid fa-music"></i> Signature:
+              <span>"Wait for It" • "The Room Where It Happens"</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Eliza Schuyler Hamilton -->
+        <article class="character-card">
+          <div class="character-card--stage">
+            <div class="stage-spotlight-beam"></div>
+            <div class="stage-ring"></div>
+            <!-- Picture of character without background -->
+            <img
+              src="assets/css/img/eliza_schuyler.png"
+              alt="Eliza Schuyler without background"
+              class="character-card--img"
+            />
+          </div>
+          <div class="character-card--body">
+            <span class="character-card--actor"
+              >ORIGINATED BY PHILLIPA SOO</span
+            >
+            <h2 class="character-card--name">Eliza Schuyler</h2>
+            <span class="character-card--role-tag"
+              >Hamilton's Wife • Philanthropist & Keeper of Legacy</span
+            >
+            <p class="character-card--desc">
+              The gentle, deeply moral second daughter of Philip Schuyler.
+              Despite enduring betrayal and devastating grief over her son
+              Philip's death, Eliza forgives Alexander and dedicates the final
+              fifty years of her life to telling his story and raising funds for
+              orphans.
+            </p>
+            <div class="character-card--song-badge">
+              <i class="fa-solid fa-music"></i> Signature:
+              <span>"Helpless" • "Burn" • "Who Lives, Who Dies"</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Angelica Schuyler -->
+        <article class="character-card">
+          <div class="character-card--stage">
+            <div class="stage-spotlight-beam"></div>
+            <div class="stage-ring"></div>
+            <!-- Picture of character without background -->
+            <img
+              src="assets/css/img/angelica_schuyler.png"
+              alt="Angelica Schuyler without background"
+              class="character-card--img"
+            />
+          </div>
+          <div class="character-card--body">
+            <span class="character-card--actor"
+              >ORIGINATED BY RENÉE ELISE GOLDSBERRY</span
+            >
+            <h2 class="character-card--name">Angelica Schuyler</h2>
+            <span class="character-card--role-tag"
+              >Eldest Schuyler Sister • Intellectual Peer</span
+            >
+            <p class="character-card--desc">
+              Brilliant, fiercely witty, and commanding, Angelica seeks
+              <em>"a mind at work"</em> in revolutionary New York. Though
+              instantly captivated by Alexander, she sacrifices her own romantic
+              feelings for Eliza's sake, remaining Hamilton’s most trusted
+              intellectual confidante.
+            </p>
+            <div class="character-card--song-badge">
+              <i class="fa-solid fa-music"></i> Signature:
+              <span>"The Schuyler Sisters" • "Satisfied"</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. George Washington -->
+        <article class="character-card">
+          <div class="character-card--stage">
+            <div class="stage-spotlight-beam"></div>
+            <div class="stage-ring"></div>
+            <!-- Picture of character without background -->
+            <img
+              src="assets/css/img/george_washington.png"
+              alt="George Washington without background"
+              class="character-card--img"
+            />
+          </div>
+          <div class="character-card--body">
+            <span class="character-card--actor"
+              >ORIGINATED BY CHRISTOPHER JACKSON</span
+            >
+            <h2 class="character-card--name">George Washington</h2>
+            <span class="character-card--role-tag"
+              >General of the Army • First President</span
+            >
+            <p class="character-card--desc">
+              The towering father figure of the Revolution. Washington mentors
+              Hamilton, guiding his fiery temper with grave wisdom about the
+              burdens of leadership, the inevitability of historical judgment,
+              and the peaceful transfer of constitutional power.
+            </p>
+            <div class="character-card--song-badge">
+              <i class="fa-solid fa-music"></i> Signature:
+              <span>"Right Hand Man" • "One Last Time"</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Thomas Jefferson / Lafayette -->
+        <article class="character-card">
+          <div class="character-card--stage">
+            <div class="stage-spotlight-beam"></div>
+            <div class="stage-ring"></div>
+            <!-- Picture of character without background -->
+            <img
+              src="assets/css/img/thomas_jefferson.png"
+              alt="Thomas Jefferson without background"
+              class="character-card--img"
+            />
+          </div>
+          <div class="character-card--body">
+            <span class="character-card--actor"
+              >ORIGINATED BY DAVEED DIGGS</span
+            >
+            <h2 class="character-card--name">Thomas Jefferson</h2>
+            <span class="character-card--role-tag"
+              >Secretary of State • Third President (Dual: Lafayette)</span
+            >
+            <p class="character-card--desc">
+              Flamboyant, silver-tongued, and fiercely protective of Southern
+              states' rights. Returning from France in Act II, Jefferson locks
+              horns with Hamilton in venomous cabinet rap battles, challenging
+              federal taxation and national banking power.
+            </p>
+            <div class="character-card--song-badge">
+              <i class="fa-solid fa-music"></i> Signature:
+              <span>"What'd I Miss?" • "Cabinet Battle #1"</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. King George III -->
+        <article class="character-card">
+          <div class="character-card--stage">
+            <div class="stage-spotlight-beam"></div>
+            <div class="stage-ring"></div>
+            <!-- Picture of character without background -->
+            <img
+              src="assets/css/img/king_george.png"
+              alt="King George III without background"
+              class="character-card--img"
+            />
+          </div>
+          <div class="character-card--body">
+            <span class="character-card--actor"
+              >ORIGINATED BY JONATHAN GROFF</span
+            >
+            <h2 class="character-card--name">King George III</h2>
+            <span class="character-card--role-tag"
+              >Monarch of Great Britain • Royal Foil</span
+            >
+            <p class="character-card--desc">
+              The pompous British monarch who treats the American revolution
+              like a spurned romantic breakup. Appearing in three show-stopping,
+              darkly comedic British-invasion pop solos, he warns that governing
+              without a king is vastly harder than winning a war.
+            </p>
+            <div class="character-card--song-badge">
+              <i class="fa-solid fa-music"></i> Signature:
+              <span>"You'll Be Back" • "What Comes Next?"</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8. John Laurens / Philip Hamilton -->
+        <article class="character-card">
+          <div class="character-card--stage">
+            <div class="stage-spotlight-beam"></div>
+            <div class="stage-ring"></div>
+            <!-- Picture of character without background -->
+            <img
+              src="assets/css/img/john_laurens.png"
+              alt="John Laurens without background"
+              class="character-card--img"
+            />
+          </div>
+          <div class="character-card--body">
+            <span class="character-card--actor"
+              >ORIGINATED BY ANTHONY RAMOS</span
+            >
+            <h2 class="character-card--name">John Laurens</h2>
+            <span class="character-card--role-tag"
+              >Abolitionist & Soldier (Dual: Philip Hamilton)</span
+            >
+            <p class="character-card--desc">
+              Hamilton's closest friend who dreams of leading the first
+              all-Black battalion to free enslaved people. Tragically killed at
+              the end of the war, his spirit is carried forward by Alexander's
+              son Philip, who later dies in a duel defending his father's honor.
+            </p>
+            <div class="character-card--song-badge">
+              <i class="fa-solid fa-music"></i> Signature:
+              <span>"The Story of Tonight" • "Blow Us All Away"</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9. Peggy Schuyler / Maria Reynolds -->
+        <article class="character-card">
+          <div class="character-card--stage">
+            <div class="stage-spotlight-beam"></div>
+            <div class="stage-ring"></div>
+            <!-- Picture of character without background -->
+            <img
+              src="assets/css/img/peggy_schuyler.png"
+              alt="Peggy Schuyler without background"
+              class="character-card--img"
+            />
+          </div>
+          <div class="character-card--body">
+            <span class="character-card--actor"
+              >ORIGINATED BY JASMINE CEPHAS JONES</span
+            >
+            <h2 class="character-card--name">Peggy Schuyler</h2>
+            <span class="character-card--role-tag"
+              >Youngest Schuyler Sister (Dual: Maria Reynolds)</span
+            >
+            <p class="character-card--desc">
+              In Act I, Peggy is the cautious, rule-following youngest sister
+              (<em>"And Peggy!"</em>). In Act II, Jones doubles as Maria
+              Reynolds, an alluring, vulnerable woman whose husband blackmails
+              Hamilton, setting off the scandal that destroys Alexander's
+              political career.
+            </p>
+            <div class="character-card--song-badge">
+              <i class="fa-solid fa-music"></i> Signature:
+              <span>"The Schuyler Sisters" • "Say No to This"</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 10. Hercules Mulligan / James Madison -->
+        <article class="character-card">
+          <div class="character-card--stage">
+            <div class="stage-spotlight-beam"></div>
+            <div class="stage-ring"></div>
+            <!-- Picture of character without background -->
+            <img
+              src="assets/css/img/hercules_mulligan.png"
+              alt="Hercules Mulligan without background"
+              class="character-card--img"
+            />
+          </div>
+          <div class="character-card--body">
+            <span class="character-card--actor"
+              >ORIGINATED BY OKIERIETE ONAODOWAN</span
+            >
+            <h2 class="character-card--name">Hercules Mulligan</h2>
+            <span class="character-card--role-tag"
+              >Tailor & Revolutionary Spy (Dual: James Madison)</span
+            >
+            <p class="character-card--desc">
+              An undercover spy posing as a tailor to British officers, passing
+              crucial battle intelligence to Washington. In Act II, Onaodowan
+              plays the chronically ill, razor-sharp James Madison, Jefferson’s
+              steadfast co-conspirator and political strategist.
+            </p>
+            <div class="character-card--song-badge">
+              <i class="fa-solid fa-music"></i> Signature:
+              <span>"Yorktown" • "Washington on Your Side"</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Lower Part of Each Page: Official Website Link (Mandatory Requirement) -->
+    <footer class="footer">
+      <div class="footer--inner">
+        <div class="footer--official-box">
+          <div class="footer--official-info">
+            <img
+              src="assets/css/img/hamilton_star_logo.jpg"
+              alt="Hamilton Star Logo"
+              class="footer--official-logo"
+            />
+            <div>
+              <span class="footer--official-tag"
+                >OFFICIAL BROADWAY PRODUCTION</span
+              >
+              <h3 class="footer--official-headline">
+                Experience Hamilton Live on Broadway
+              </h3>
+              <p class="footer--official-sub">
+                Richard Rodgers Theatre • 226 W 46th St, New York, NY 10036
+              </p>
+            </div>
+          </div>
+          <!-- Official Website External Link -->
+          <a
+            href="https://hamiltonmusical.com/new-york/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer--official-link-btn"
+          >
+            Visit Official Website
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+        <div class="footer--grid">
+          <div>
+            <h4 class="footer--col-title">The Cast of Hamilton</h4>
+            <p
+              style="
+                font-size: 0.9rem;
+                color: var(--text-muted);
+                line-height: 1.7;
+              "
+            >
+              Lin-Manuel Miranda’s visionary casting brought diverse actors into
+              the shoes of early American leaders, winning accolades worldwide
+              and revitalizing interest in early American history.
+            </p>
+          </div>
+          <div>
+            <h4 class="footer--col-title">Site Navigation</h4>
+            <div class="footer--col-links">
+              <a href="index.html">Home & Storyline</a>
+              <a href="songs.html">Songs with Spotify Links</a>
+              <a href="characters.html">Cast & Characters Without Background</a>
+              <a href="https://hamiltonmusical.com/new-york/" target="_blank"
+                >Official New York Production</a
+              >
+            </div>
+          </div>
+          <div>
+            <h4 class="footer--col-title">Official Music & Media</h4>
+            <div class="footer--col-links">
+              <a
+                href="https://open.spotify.com/album/1kCHru7uxPuQwyP48wL4O2"
+                target="_blank"
+                ><i class="fa-brands fa-spotify"></i> Spotify Cast Album</a
+              >
+              <a href="https://www.youtube.com/@HamiltonMusical" target="_blank"
+                ><i class="fa-brands fa-youtube"></i> Official YouTube</a
+              >
+              <a href="https://twitter.com/hamiltonmusical" target="_blank"
+                ><i class="fa-brands fa-x-twitter"></i> Official Twitter / X</a
+              >
+              <a
+                href="https://www.instagram.com/hamiltonmusical/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i> Official Instagram</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="footer--bottom">
+          <p>
+            &copy; 2026 Alexander Hamilton Fan Portal. Inspired by
+            <a href="https://pjsekai.sega.jp/" target="_blank">Project SEKAI</a>
+            &
+            <a href="https://hamiltonmusical.com/new-york/" target="_blank"
+              >Hamilton Musical</a
+            >.
+          </p>
+          <p>
+            Original Musical by Lin-Manuel Miranda • Official Site:
+            <a href="https://hamiltonmusical.com/new-york/" target="_blank"
+              >hamiltonmusical.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
